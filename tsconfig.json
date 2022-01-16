@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "es6",
+        "target": "es2015",
+        "jsx": "react-jsx",
+        "allowJs": true,
+        "isolatedModules": true,
+        "moduleResolution": "node"
+    },
+    "include": [
+        "src",
+        "index.d.ts"
+    ]
+}

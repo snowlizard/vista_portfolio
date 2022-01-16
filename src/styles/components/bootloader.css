@@ -1,0 +1,17 @@
+.bootloader_container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#bootloader_pre {
+    background-size: auto;
+}
+
+#bootloader_2nd{
+    align-self: center;
+}
