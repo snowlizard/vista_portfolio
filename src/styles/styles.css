@@ -1,4 +1,5 @@
 @import './base/reset.css';
 @import './components/bootloader.css';
 @import './components/desktop.css';
+@import './components/startMenu.css';
 @import './base/app.css';
