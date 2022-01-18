@@ -10,6 +10,7 @@ export const Desktop = () => {
 
     return(
         <div className="desktop_background" style={style} >
+            <div id="start_orb"></div>
             <div id="taskbar"></div>
         </div>
     );

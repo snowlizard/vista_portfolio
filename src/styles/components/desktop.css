@@ -17,3 +17,15 @@
     background-size: contain;
     background-repeat: repeat-x;
 }
+
+#start_orb{
+    position: fixed;
+    bottom: -4px;
+    left: 1em;
+    width: 65px;
+    height: 40px;
+    background-image: url('../../assets/ui/startorb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
