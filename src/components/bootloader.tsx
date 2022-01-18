@@ -7,6 +7,12 @@ import boot2nd  from '../assets/bootloader_2nd.mp4';
 import vista_logon_logo from '../assets/vista_logon_logo.png';
 import loadingCircle from '../assets/loading_circle.png';
 
+
+// simulate boot sequence using two timeouts
+// and switch component after each timeout
+// on final boot sequence dispatch action and 
+// set bootState to true - booting is done -
+
 export const Bootloader = () => {
     const [bootOrder, setBoot] = useState('pre');
     const dispatch = useDispatch();
