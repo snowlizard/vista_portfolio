@@ -2,10 +2,11 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { bootState } from "../redux/actions/bootStateAction";
-import boot from '../assets/bootloader_pre.gif';
-import boot2nd  from '../assets/bootloader_2nd.mp4';
-import vista_logon_logo from '../assets/vista_logon_logo.png';
-import loadingCircle from '../assets/loading_circle.png';
+import boot from '../assets/boot/bootloader_pre.gif';
+import boot2nd  from '../assets/boot/bootloader_2nd.mp4';
+import vista_logon_logo from '../assets/boot/vista_logon_logo.png';
+import loadingCircle from '../assets/ui/loading_circle.png';
+import startSound from '../assets/boot/startup_sound.mp3';
 
 
 // simulate boot sequence using two timeouts
@@ -19,6 +20,7 @@ export const Bootloader = () => {
 
     useEffect( () => {
         const timeout = setTimeout( () => {
+            new Audio(startSound).play();
             setBoot('boot2nd');
         }, 4000);
 

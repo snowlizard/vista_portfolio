@@ -1,0 +1,19 @@
+.desktop_background{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*  taskbar size tga 201x30px */
+
+#taskbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-image: url('../../assets/ui/taskbar.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+}
