@@ -1,5 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { bootState } from "../redux/actions/bootStateAction";
 import boot from '../assets/bootloader_pre.gif';
 import boot2nd  from '../assets/bootloader_2nd.mp4';
 import vista_logon_logo from '../assets/vista_logon_logo.png';
@@ -7,6 +9,7 @@ import loadingCircle from '../assets/loading_circle.png';
 
 export const Bootloader = () => {
     const [bootOrder, setBoot] = useState('pre');
+    const dispatch = useDispatch();
 
     useEffect( () => {
         const timeout = setTimeout( () => {
@@ -31,7 +34,8 @@ export const Bootloader = () => {
                 </video>
                 : <div id="bootloader_final">
                     <div className="bootWelcome">
-                        <img id="loadingCircle" src={loadingCircle}></img>
+                        <img id="loadingCircle" src={loadingCircle}
+                        onAnimationEnd={ () => dispatch(bootState(true))}></img>
                         <span id="boot_text" >Welcome</span>
                     </div>
                     <img id="bootlogo_bottom" src={vista_logon_logo}></img>
