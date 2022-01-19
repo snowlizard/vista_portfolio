@@ -1,11 +1,9 @@
 import * as React from 'react';
-
-// place list size 145x464
-
+import { Box } from '@mui/material';
 
 export const StartMenu = () => {
     return (
-        <div className='startMenu'>
+        <Box className='startMenu' id='start_menu'>
             <div className='programList'>
                 <div className='programs'></div>
                 <div className='searchBar'>
@@ -14,6 +12,6 @@ export const StartMenu = () => {
                 </div>
             </div>
             <div className='placelist'></div>
-        </div>
+        </Box>
     );
 }

@@ -27,5 +27,9 @@
     background-image: url('../../assets/ui/startorb.png');
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1;
+    z-index: 99;
+}
+
+#start_orb:hover{
+    filter: brightness(1.2);
 }
