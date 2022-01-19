@@ -33,3 +33,29 @@
 #start_orb:hover{
     filter: brightness(1.2);
 }
+
+.iconsContainer{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.iconContainer{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 78px;
+}
+
+.icons{
+    margin: 1em;
+    width: 48px;
+    height: 48px;
+}
+
+.iconText{
+    font-size: .75em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
