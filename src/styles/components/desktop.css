@@ -48,6 +48,10 @@
     width: 78px;
 }
 
+.iconContainer:hover{
+    cursor: pointer;
+}
+
 .icons{
     margin: 1em;
     width: 48px;
