@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { List, ListItemButton, ListItemText } from '@mui/material';
 import mail from '../../assets/ui/icons/mail.png';
 import msn from '../../assets/ui/icons/msn.png';
 import notepad from '../../assets/ui/icons/notepad.png';
@@ -18,29 +17,20 @@ export const Programlist = () => {
     const keys = Object.keys(programs);
 
     return (
-        <List className='progams_list'>
-            <div className='programIconsContainer'>
-            {
-                keys.map( program => {
-                    return (
-                        <img key={programs[program]} className='programIcons' src={programs[program]}></img>
-                    );
-                })
-            }
-            </div>
-
+        <div className='programs_list'>
             {
                 keys.map( llave => {
                     return (
-                        <ListItemButton key={llave}>
-                            <ListItemText  primary={llave}/>
-                        </ListItemButton>
+                        <div className='program'>
+                            <img className='programIcons' src={programs[llave]}></img>
+                            <span className='programTitle'>{llave}</span>
+                        </div>
                     );
                 })
             }
-        </List>
+        </div>
     );
 }
 
-// had to do some weird ugly work around to get past the fact
-// that mui lists only work with svg images.
+
+// llave is spanish for key

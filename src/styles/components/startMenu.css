@@ -97,18 +97,56 @@
     margin-bottom: 20px;
 }
 
-.programsIconsContainer{
-    position: absolute;
-    width: 50px;
-    height: 500px;
-    background-color: green;
+
+.programs_list{
     display: flex;
+    align-content: center;
     flex-flow: column;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 }
+
+.program{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    transition-duration: 0.4s;
+    position: relative;
+}
+
+.program:hover{
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+.program:after {
+    content: "";
+    background: #dcdcdc;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.program:active:after{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+
 
 .programIcons{
     width: 36px;
     height: 36px;
     background-size: contain;
+    margin-left: 4px;
+    margin-right: 4px;
 }
