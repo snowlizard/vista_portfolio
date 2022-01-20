@@ -9,9 +9,9 @@ interface obj {
 
 export const Programlist = () => {
     const programs: obj = {
-        'mail': mail,
-        'msn' : msn,
-        'notepad' : notepad
+        'Mail': mail,
+        'Msn' : msn,
+        'Notepad' : notepad
     };
 
     const keys = Object.keys(programs);
@@ -31,6 +31,5 @@ export const Programlist = () => {
         </div>
     );
 }
-
 
 // llave is spanish for key
