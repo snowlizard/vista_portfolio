@@ -3,7 +3,6 @@
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 /*  taskbar size tga 201x30px */
@@ -37,6 +36,7 @@
 .iconsContainer{
     display: flex;
     flex-flow: column wrap;
+    width: 200px;
 }
 
 .iconContainer{

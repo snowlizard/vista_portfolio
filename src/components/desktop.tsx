@@ -19,8 +19,6 @@ export const Desktop = () => {
     return(
         <div className="desktop_background" style={style} >
             <Icons />
-
-
             <ClickAwayListener onClickAway={ () => setVisible(false)}>
                 <div>
                     <div id="start_orb" onClick={handleClick}></div>

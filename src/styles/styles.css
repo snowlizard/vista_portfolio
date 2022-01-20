@@ -2,4 +2,5 @@
 @import './components/bootloader.css';
 @import './components/desktop.css';
 @import './components/startMenu.css';
+@import './components/window.css';
 @import './base/app.css';

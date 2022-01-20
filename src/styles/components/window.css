@@ -1,0 +1,42 @@
+.window{
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(71, 69, 69);
+    box-shadow: 0 1px 10px 1px;
+    resize: both;
+    overflow: auto;
+}
+
+.windowBackground{
+    background: rgba(136, 158, 172, 0.3);
+    filter: blur(1px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.windowContents{
+    margin-top: 8%;
+    width: 98%;
+    height: 91%;
+    background: white;
+    border-radius: 3px;
+}
+
+#dragStrip{
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    z-index: 2;
+}
