@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Box, Divider } from '@mui/material';
+import { Programlist } from './programlist';
 import userFrame from '../../assets/ui/UserFrame.png';
 import userPicture from '../../assets/ui/user_picture.jpg';
 import searchIcon from '../../assets/ui/searchicon.png';
@@ -8,7 +9,9 @@ export const StartMenu = () => {
     return (
         <Box className='startMenu' id='start_menu'>
             <div className='programList'>
-                <div className='programs'></div>
+                <div className='programs'>
+                    <Programlist />
+                </div>
                 <div className='searchBar'>
                     <input id='search__bar' type='text'
                     placeholder='Start Search'></input>

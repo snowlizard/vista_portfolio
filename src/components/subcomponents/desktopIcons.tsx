@@ -1,8 +1,8 @@
 import * as React from "react";
-import thispc from '../../assets/ui/shell32.png';
-import bin from '../../assets/ui/recyclebin.png';
-import github from '../../assets/ui/github.png';
-import aboutMe from '../../assets/ui/about.png';
+import thispc from '../../assets/ui/icons/shell32.png';
+import bin from '../../assets/ui/icons/recyclebin.png';
+import github from '../../assets/ui/icons/github.png';
+import aboutMe from '../../assets/ui/icons/about.png';
 
 export const Icons = () => {
     return (
