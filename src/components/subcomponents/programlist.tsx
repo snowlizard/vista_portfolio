@@ -21,7 +21,7 @@ export const Programlist = () => {
             {
                 keys.map( llave => {
                     return (
-                        <div className='program'>
+                        <div className='program' key={llave}>
                             <img className='programIcons' src={programs[llave]}></img>
                             <span className='programTitle'>{llave}</span>
                         </div>
