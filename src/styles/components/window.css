@@ -10,7 +10,7 @@
     border: 1px solid rgb(71, 69, 69);
     box-shadow: 0 1px 10px 1px;
     resize: both;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .windowBackground{
@@ -27,11 +27,12 @@
 }
 
 .windowContents{
-    margin-top: 8%;
+    margin-top: 40px;
     width: 98%;
-    height: 91%;
-    background: white;
+    height: 95%;
     border-radius: 3px;
+    overflow: hidden;
+    z-index: 10;
 }
 
 #dragStrip{

@@ -2,7 +2,7 @@ import * as React from "react";
 import widescreen7 from '../assets/wallpaper/widescreen7.jpg';
 import { Taskbar } from "./subcomponents/taskbar";
 import { Icons } from "./subcomponents/desktopIcons";
-import { Window } from "./subcomponents/window";
+import { Apps } from "./apps/applist";
 
 export const Desktop = () => {
 
@@ -15,10 +15,13 @@ export const Desktop = () => {
         <div className="desktop_background" style={style} >
             <Icons />
             <Taskbar />
+            {
+                Apps.map( app => {
+                    return app.open ?
+                        app.app
+                        : null
+                })
+            }
         </div>
     );
 }
-
-// windows app will work by using
-// <Window content={<p>Hello world</p>} title="uhhh"/>
-// pass component data as child to parent window and title

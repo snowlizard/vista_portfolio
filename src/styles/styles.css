@@ -2,3 +2,4 @@
 @import './components/bootloader.css';
 @import './components/desktop.css';
 @import './components/window.css';
+@import './components/apps/app.css';
