@@ -5,7 +5,7 @@ import { RootStateOrAny, useSelector } from "react-redux";
 
 
 export const Purgatory = () => {
-    const bootFinished = useSelector( (state: RootStateOrAny) => state);
+    const bootFinished = useSelector( (state: RootStateOrAny) => state.boot);
 
     return (
         !bootFinished 

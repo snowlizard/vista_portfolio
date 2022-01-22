@@ -1,11 +1,11 @@
 import * as React from "react";
+import { useSelector, RootStateOrAny } from "react-redux";
 import widescreen7 from '../assets/wallpaper/widescreen7.jpg';
 import { Taskbar } from "./subcomponents/taskbar";
 import { Icons } from "./subcomponents/desktopIcons";
-import { Apps } from "./apps/applist";
 
 export const Desktop = () => {
-
+    const apps = useSelector( (state: RootStateOrAny) => state.apps);
 
     const style = {
         "backgroundImage": `url(${widescreen7})`
@@ -16,10 +16,8 @@ export const Desktop = () => {
             <Icons />
             <Taskbar />
             {
-                Apps.map( app => {
-                    return app.open ?
-                        app.app
-                        : null
+                apps.map( (app: any) => {
+                    if(app.open) return app.app
                 })
             }
         </div>
