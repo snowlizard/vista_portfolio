@@ -1,5 +1,7 @@
 import * as React from 'react';
 import Draggable from 'react-draggable';
+import { useDispatch } from 'react-redux';
+import { appIsOpen } from '../../redux/actions/appAction';
 import close from '../../assets/ui/close.png';
 import min from '../../assets/ui/minimize.png';
 import max from '../../assets/ui/maximize.png';
@@ -11,6 +13,11 @@ type windowProps = {
 
 
 export const Window: React.FC<windowProps> = ({content, title}) => {
+    const dispatch = useDispatch();
+
+    const handleCloseApp = (appName: string) => {
+        dispatch(appIsOpen({name: appName, open: false}));
+    }
     
     return (
         <Draggable bounds="parent" handle='#dragStrip'>
@@ -20,7 +27,8 @@ export const Window: React.FC<windowProps> = ({content, title}) => {
                     <div id='windowButtons'>
                         <img id='minIcon' src={min}></img>
                         <img id='maxIcon' src={max}></img>
-                        <img id='closeIcon' src={close}></img>
+                        <img id='closeIcon' src={close}
+                        onClick={ () => handleCloseApp(title)}></img>
                     </div>
                 </div>
                 <div className='windowBackground'></div>

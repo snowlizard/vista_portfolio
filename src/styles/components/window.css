@@ -73,4 +73,5 @@
     width: 38px;
     height: 25px;
     margin: -5px;
+    z-index: 9999;
 }
