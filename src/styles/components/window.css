@@ -42,7 +42,6 @@
     z-index: 2;
     display: flex;
     align-content: center;
-
 }
 
 .windowTitle{
@@ -50,4 +49,28 @@
     font-size: .8em;
     align-self: center;
     margin-left: 5px;
+    width: 85%;
+}
+
+#windowButtons{
+    display: flex;
+}
+
+
+#closeIcon{
+    width: 38px;
+    height: 24.2px;
+    margin: -6px;
+}
+
+#minIcon{
+    width: 38px;
+    height: 28px;
+    margin: -6px;
+}
+
+#maxIcon{
+    width: 38px;
+    height: 25px;
+    margin: -5px;
 }
