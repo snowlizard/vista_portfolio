@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Vscode } from "../../components/apps/vscode";
 import { About } from "../../components/apps/about";
+import { Msn } from "./msn";
+import { Notepad } from "./notepad";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import github from '../../assets/ui/icons/github.png';
@@ -55,14 +57,14 @@ export const Apps = [
     },
     {
         name : 'Msn',
-        app  : <div></div>,
+        app  : <Msn />,
         open : false,
         icon : msn,
         type : 'startmenu'
     },
     {
         name : 'Notepad',
-        app  : <div></div>,
+        app  : <Notepad />,
         icon : notepad,
         type : 'startmenu'
     }

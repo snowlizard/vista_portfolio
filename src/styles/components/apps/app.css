@@ -37,3 +37,12 @@
     width: 36px;
     height: 36px;
 }
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#notepad{
+    background: white;
+}
