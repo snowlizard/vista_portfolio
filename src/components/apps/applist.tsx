@@ -6,36 +6,64 @@ import bin from '../../assets/ui/icons/recyclebin.png';
 import github from '../../assets/ui/icons/github.png';
 import aboutMe from '../../assets/ui/icons/about.png';
 import vscode from '../../assets/ui/icons/vscode.png';
+import mail from '../../assets/ui/icons/mail.png';
+import msn from '../../assets/ui/icons/msn.png';
+import notepad from '../../assets/ui/icons/notepad.png';
 
 export const Apps = [
     {
-        'name' : 'thispc',
-        'app'  : <div></div>,
-        'open' : false,
-        'icon' : thispc
+        name : 'Desktop',
+        app  : <div></div>,
+        open : false,
+        icon : thispc,
+        type : 'desktop'
     },
     {
-        'name' : 'bin',
-        'app'  : <div></div>,
-        'open' : false,
-        'icon' : bin
+        name : 'Recycle Bin',
+        app  : <div></div>,
+        open : false,
+        icon : bin,
+        type : 'desktop'
     },
     {   
-        'name'  : 'vscode',
-        'app'   : <Vscode key='vscodeApp' />,
-        'open'  : false,
-        'icon'  : vscode
+        name  : 'Vscode',
+        app   : <Vscode key='vscodeApp' />,
+        open  : false,
+        icon  : vscode,
+        type : 'desktop'
     },
     {   
-        'name'  : 'about',
-        'app': <About key='aboutApp' />,
-        'open'  : false,
-        'icon'  : aboutMe
+        name  : 'About',
+        app: <About key='aboutApp' />,
+        open  : false,
+        icon  : aboutMe,
+        type : 'desktop'
     },
     {
-        'name' : 'github',
-        'app'  : <div></div>,
-        'open' : false,
-        'icon' : github
+        name : 'Github',
+        app  : <div></div>,
+        open : false,
+        icon : github,
+        type : 'desktop'
+    },
+    {
+        name : 'Mail',
+        app  : <div></div>,
+        open : false,
+        icon : mail,
+        type : 'startmenu'
+    },
+    {
+        name : 'Msn',
+        app  : <div></div>,
+        open : false,
+        icon : msn,
+        type : 'startmenu'
+    },
+    {
+        name : 'Notepad',
+        app  : <div></div>,
+        icon : notepad,
+        type : 'startmenu'
     }
 ]

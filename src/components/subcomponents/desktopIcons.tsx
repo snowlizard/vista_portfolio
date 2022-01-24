@@ -1,9 +1,10 @@
 import * as React from "react";
 import { useDispatch } from "react-redux";
 import { appIsOpen } from "../../redux/actions/appAction";
-import { Apps } from "../apps/applist";
+import { RootStateOrAny, useSelector } from 'react-redux';
 
 export const Icons = () => {
+    const Apps = useSelector( (state: RootStateOrAny) => state.apps);
     const dispatch = useDispatch();
 
     const openApp = (app: string) => {
@@ -13,7 +14,8 @@ export const Icons = () => {
     return (
         <div className="iconsContainer">
             {
-                Apps.map( app => {
+                Apps.map( (app: any) => {
+                    if(app.type === 'desktop')
                     return (
                         <div className="iconContainer" key={`${app.name}+desktopIcon`}
                         onClick={ () => openApp(app.name) }>

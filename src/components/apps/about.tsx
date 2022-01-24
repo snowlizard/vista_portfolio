@@ -9,7 +9,7 @@ import python from '../../assets/ui/icons/python_icon.png';
 export const About = () => {
     return (
         <Window 
-        title="about"
+        title="About"
         content={
             <MyContent />
         }/>

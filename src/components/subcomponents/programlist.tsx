@@ -1,29 +1,18 @@
 import * as React from 'react';
-import mail from '../../assets/ui/icons/mail.png';
-import msn from '../../assets/ui/icons/msn.png';
-import notepad from '../../assets/ui/icons/notepad.png';
-
-interface obj {
-    [key: string] : any
-}
+import { RootStateOrAny, useSelector } from 'react-redux';
 
 export const Programlist = () => {
-    const programs: obj = {
-        'Mail': mail,
-        'Msn' : msn,
-        'Notepad' : notepad
-    };
-
-    const keys = Object.keys(programs);
+    const Apps = useSelector( (state: RootStateOrAny) => state.apps)
 
     return (
         <div className='programs_list'>
             {
-                keys.map( llave => {
+                Apps.map( (app: any) => {
+                    if(app.type === 'startmenu')
                     return (
-                        <div className='program' key={llave}>
-                            <img className='programIcons' src={programs[llave]}></img>
-                            <span className='programTitle'>{llave}</span>
+                        <div className='program' key={app.name}>
+                            <img className='programIcons' src={app.icon}></img>
+                            <span className='programTitle'>{app.name}</span>
                         </div>
                     );
                 })
@@ -31,5 +20,3 @@ export const Programlist = () => {
         </div>
     );
 }
-
-// llave is spanish for key

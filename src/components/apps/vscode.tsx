@@ -3,7 +3,7 @@ import { Window } from '../subcomponents/window';
 
 export const Vscode = () => {
     return (
-        <Window title='vscode'
+        <Window title='Vscode'
         content={
             <iframe id='vscode' src='https://github1s.com/snowlizard/vista_portfolio'></iframe>
         }/>
