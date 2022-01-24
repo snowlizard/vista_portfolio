@@ -7,7 +7,8 @@ export const Cards = () => {
         <Window title='Cards'
         content={
             <iframe src='./cards/index.html'
-            style={ {"border": "none"}}></iframe>
+            style={ {"border": "none",
+            "zoom": "0.75"} }></iframe>
         }/>
     );
 }
