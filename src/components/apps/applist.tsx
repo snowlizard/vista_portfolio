@@ -3,6 +3,7 @@ import { Vscode } from "../../components/apps/vscode";
 import { About } from "../../components/apps/about";
 import { Msn } from "./msn";
 import { Notepad } from "./notepad";
+import { Cards } from "./cards";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import github from '../../assets/ui/icons/github.png';
@@ -11,6 +12,7 @@ import vscode from '../../assets/ui/icons/vscode.png';
 import mail from '../../assets/ui/icons/mail.png';
 import msn from '../../assets/ui/icons/msn.png';
 import notepad from '../../assets/ui/icons/notepad.png';
+import cards from '../../assets/ui/icons/cards.png';
 
 export const Apps = [
     {
@@ -66,6 +68,12 @@ export const Apps = [
         name : 'Notepad',
         app  : <Notepad />,
         icon : notepad,
+        type : 'startmenu'
+    },
+    {
+        name : 'Cards',
+        app  : <Cards />,
+        icon : cards,
         type : 'startmenu'
     }
 ]
