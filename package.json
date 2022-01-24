@@ -4,7 +4,8 @@
   "description": "windows vista portfolio",
   "main": "app.tsx",
   "scripts": {
-    "start": "webpack serve --mode development --entry ./src/app.tsx"
+    "start": "webpack serve --mode development --entry ./src/app.tsx",
+    "build": "webpack --mode production --entry ./src/app.tsx --output-path ./dist"
   },
   "keywords": [
     "portfolio"
