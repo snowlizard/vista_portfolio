@@ -42,7 +42,7 @@ const MyContent = () => {
                 </p>
                 <br/>
                 <p>As for me, I have an Associates Degree in Web Development from Fresno 
-                    City College and plan on pursing a bachelors in Computer Science. Right now
+                    City College and plan on pursing a Bachelors in Computer Science. Right now
                     I am focusing on improving my Frontend skills and soon I will be working on my
                     backend skills. Technology I am currently familiar with include, Javscript, CSS,
                      HTML, React, Redux, Typescript, and Python. I also know basic Postgres SQL.
@@ -54,7 +54,7 @@ const MyContent = () => {
                     As you can see I am a big RPG fan and have had so much fun replaying these games
                     especially since you can mod most of them via <a target='_blank'
                     href="https://www.nexusmods.com/">Nexus Mods </a>. When it comes to cars although
-                    I am a fan of JDM cars I do have a love affiar for BMW's. My first car was a 92 325i
+                    I am a fan of JDM cars I do have a love affair for BMW's. My first car was a 92 325i
                      in which I learned how to drive stick in and also learned how to do all of its repairs
                      on by myself.
                 </p>
