@@ -5,9 +5,10 @@ import { Msn } from "./msn";
 import { Notepad } from "./notepad";
 import { Cards } from "./cards";
 import { Mail } from "./mail";
+import { Resume } from "./resume";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
-import github from '../../assets/ui/icons/github.png';
+import resume from '../../assets/ui/icons/github.png';
 import aboutMe from '../../assets/ui/icons/about.png';
 import vscode from '../../assets/ui/icons/vscode.png';
 import mail from '../../assets/ui/icons/mail.png';
@@ -45,10 +46,10 @@ export const Apps = [
         type : 'desktop'
     },
     {
-        name : 'Github',
-        app  : <div></div>,
+        name : 'Resume',
+        app  : <Resume />,
         open : false,
-        icon : github,
+        icon : resume,
         type : 'desktop'
     },
     {
