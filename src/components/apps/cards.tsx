@@ -8,7 +8,7 @@ export const Cards = () => {
         content={
             <iframe src='./cards/index.html'
             style={ {"border": "none",
-            "zoom": "0.75"} }></iframe>
+            "overflow": "auto"} }></iframe>
         }/>
     );
 }
