@@ -4,6 +4,7 @@ import { About } from "../../components/apps/about";
 import { Msn } from "./msn";
 import { Notepad } from "./notepad";
 import { Cards } from "./cards";
+import { Mail } from "./mail";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import github from '../../assets/ui/icons/github.png';
@@ -52,7 +53,7 @@ export const Apps = [
     },
     {
         name : 'Mail',
-        app  : <div></div>,
+        app  : <Mail />,
         open : false,
         icon : mail,
         type : 'startmenu'

@@ -46,3 +46,29 @@ iframe {
 #notepad{
     background: white;
 }
+
+#contact{
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.fromSubject{
+    width: 98%;
+    height: 60px;
+    margin: 5px;
+}
+
+#bodyContainer{
+    margin: 5px;
+}
+
+#submitContact{
+    width: 4em;
+    align-self: center;
+    background: #0695f9;
+    color: white;
+}
