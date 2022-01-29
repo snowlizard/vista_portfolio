@@ -8,11 +8,12 @@ import max from '../../assets/ui/maximize.png';
 
 type windowProps = {
     content?: React.ReactNode
-    title?: string
+    title?: string,
+    idname?: string
 }
 
 
-export const Window: React.FC<windowProps> = ({content, title}) => {
+export const Window: React.FC<windowProps> = ({content, title, idname='default'}) => {
     const dispatch = useDispatch();
 
     const handleCloseApp = (appName: string) => {
@@ -21,7 +22,7 @@ export const Window: React.FC<windowProps> = ({content, title}) => {
     
     return (
         <Draggable bounds="parent" handle='#dragStrip'>
-            <div className='window'>
+            <div className='window' id={idname}>
                 <div id='dragStrip'>
                     <div className='windowTitle' >{title}</div>
                     <div id='windowButtons'>

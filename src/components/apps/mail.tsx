@@ -8,7 +8,8 @@ import { TextField, Button } from "@mui/material";
 export const Mail = () => {
     return (
         <Window title="Mail"
-        content={<Contact />} />
+        content={<Contact />}
+        idname="mailApp" />
     );
 }
 

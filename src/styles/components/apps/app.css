@@ -72,3 +72,8 @@ iframe {
     background: #0695f9;
     color: white;
 }
+
+#mailApp{
+    width: 40%;
+    height: 40%;
+}

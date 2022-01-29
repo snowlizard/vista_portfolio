@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Vscode } from "../../components/apps/vscode";
-import { About } from "../../components/apps/about";
 import { Msn } from "./msn";
 import { Notepad } from "./notepad";
 import { Cards } from "./cards";
@@ -9,7 +8,6 @@ import { Resume } from "./resume";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import resume from '../../assets/ui/icons/github.png';
-import aboutMe from '../../assets/ui/icons/about.png';
 import vscode from '../../assets/ui/icons/vscode.png';
 import mail from '../../assets/ui/icons/mail.png';
 import msn from '../../assets/ui/icons/msn.png';
@@ -36,13 +34,6 @@ export const Apps = [
         app   : <Vscode key='vscodeApp' />,
         open  : false,
         icon  : vscode,
-        type : 'desktop'
-    },
-    {   
-        name  : 'About',
-        app: <About key='aboutApp' />,
-        open  : false,
-        icon  : aboutMe,
         type : 'desktop'
     },
     {
