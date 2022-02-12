@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { appIsOpen } from '../../redux/actions/appAction';
+import { startMenuIsOpen } from '../../redux/actions/startMenuAction';
 import { RootStateOrAny, useSelector, useDispatch } from 'react-redux';
 
 export const Programlist = () => {
@@ -8,6 +9,7 @@ export const Programlist = () => {
 
     const handleClick = (app: string) => {
         dispatch(appIsOpen({name: app, open: true}));
+        dispatch(startMenuIsOpen(false));
     }
 
     return (

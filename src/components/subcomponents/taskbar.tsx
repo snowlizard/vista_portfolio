@@ -1,19 +1,22 @@
 import * as React from "react";
+import { useState, useEffect } from "react";
 import * as moment from "moment";
 import { ClickAwayListener } from "@mui/material";
-import { useState, useEffect } from "react";
+import { RootStateOrAny, useSelector, useDispatch } from "react-redux";
+import { startMenuIsOpen } from "../../redux/actions/startMenuAction";
 import { StartMenu } from "./startmenu";
 import wifi from '../../assets/ui/icons/wifi.png'
 import volume from '../../assets/ui/icons/volume.png';
 
 
 export const Taskbar = () => {
+    const dispatch = useDispatch();
+    const isVisible = useSelector( (state: RootStateOrAny) => state.menu);
     const currentTime = moment().format('hh:mm A');
     const [time, setTime] = useState(currentTime);
-    const [visible, setVisible] = useState(false);
 
     const handleClick = () => {
-        setVisible(!visible);
+        dispatch(startMenuIsOpen(!isVisible));
     }
 
     // update clock ever 55 seconds
@@ -25,10 +28,10 @@ export const Taskbar = () => {
     
     return (
         <div>
-            <ClickAwayListener onClickAway={ () => setVisible(false)}>
+            <ClickAwayListener onClickAway={ () => dispatch(startMenuIsOpen(false))}>
             <div>
                 <div id="start_orb" onClick={handleClick}></div>
-                { visible ? <StartMenu /> : null }
+                { isVisible ? <StartMenu /> : null }
             </div>
             </ClickAwayListener>
             <div id="taskbar">
