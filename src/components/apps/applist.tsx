@@ -5,6 +5,7 @@ import { Notepad } from "./notepad";
 import { Cards } from "./cards";
 import { Mail } from "./mail";
 import { Resume } from "./resume";
+import { FileExplorer } from "./fileExplorer";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import resume from '../../assets/ui/icons/github.png';
@@ -17,7 +18,7 @@ import cards from '../../assets/ui/icons/cards.png';
 export const Apps = [
     {
         name : 'Desktop',
-        app  : <div></div>,
+        app  : <FileExplorer />,
         open : false,
         icon : thispc,
         type : 'desktop'

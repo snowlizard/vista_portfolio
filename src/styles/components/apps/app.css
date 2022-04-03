@@ -10,34 +10,6 @@
     background: white;
 }
 
-#aboutText{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1em;
-    padding: 10px;
-}
-
-#aboutText > h1 {
-    font-size: 2em;
-}
-
-#aboutText > h2 {
-    font-size: 1.3em;
-    margin-bottom: 5px;
-}
-
-#aboutText > p {
-    text-indent: 30px;
-}
-
-#aboutIcons{
-    float: right;
-}
-
-.aboutImageIcons{
-    width: 48px;
-    height: 48px;
-}
-
 iframe {
     width: 100%;
     height: 100%;
@@ -46,6 +18,8 @@ iframe {
 #notepad{
     background: white;
 }
+
+/* mail app */
 
 #contact{
     background: white;
@@ -76,4 +50,73 @@ iframe {
 #mailApp{
     width: 40%;
     height: 40%;
+}
+
+/* file explorer */
+#explorerWindow{
+    height: 60%;
+}
+
+.fileExplorer{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.explorerNavBar{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-right: 2px solid rgba(241, 241, 241, 0.8);
+}
+
+.explorerLinks{
+    color: #0695f9;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+
+.explorerLinks > span {
+    align-self: center;
+}
+
+.linksFolder{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+.linksLabel{
+    color: silver;
+    margin-left: 5px;
+}
+
+.fileIcon{
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.explorerContent{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.wallpapers{
+    margin: 5px;
+    width: 100px;
+    height: 100px;
 }
