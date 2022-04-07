@@ -7,6 +7,7 @@ import { Mail } from "./mail";
 import { Resume } from "./resume";
 import { FileExplorer } from "./fileExplorer";
 import { Pokedex } from "./pokedex";
+import { Weather } from "./weather";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import resume from '../../assets/ui/icons/github.png';
@@ -16,6 +17,7 @@ import msn from '../../assets/ui/icons/msn.png';
 import notepad from '../../assets/ui/icons/notepad.png';
 import cards from '../../assets/ui/icons/cards.png';
 import pokeball from '../../assets/ui/icons/pokeball.png';
+import sun from '../../assets/ui/icons/sun.png';
 
 export const Apps = [
     {
@@ -47,6 +49,13 @@ export const Apps = [
         type : 'desktop'
     },
     {
+        name : 'Weather',
+        app  : <Weather />,
+        open : false,
+        icon : sun,
+        type : 'desktop'
+    },
+    {
         name : 'Mail',
         app  : <Mail />,
         open : false,
@@ -63,18 +72,21 @@ export const Apps = [
     {
         name : 'Notepad',
         app  : <Notepad />,
+        open : false,
         icon : notepad,
         type : 'startmenu'
     },
     {
         name : 'Cards',
         app  : <Cards />,
+        open : false,
         icon : cards,
         type : 'startmenu'
     },
     {
         name : 'Pokedex',
         app  : <Pokedex />,
+        open : false,
         icon : pokeball,
         type : 'startmenu'
     }
