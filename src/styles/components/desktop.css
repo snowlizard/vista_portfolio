@@ -237,6 +237,10 @@
     right: 88px;
 }
 
+#volume_icon:hover{
+    filter: brightness(1.2);
+}
+
 #wifi_icon{
     right: 115px;
 }
