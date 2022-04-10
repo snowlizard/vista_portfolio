@@ -12,6 +12,8 @@ to hear the windows vista boot chime. Not clicking the page will not cause any
 errors but the console will display a uncaught promise exception in relation to  
 autoplay being disabled by default.  
 
+#### This repository makes use of git large file storage in order
+#### for the projects to display you must run the <code> git lfs pull </code> command
 
 ## Features
 >Modular Components for easy maintence and adding new features
