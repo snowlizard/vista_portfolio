@@ -23,7 +23,7 @@ export const Taskbar = () => {
 
     // toggle volume control slider
     const handleVolume = () => {
-        dispatch(volumeAction(volumeOpen));
+        dispatch(volumeAction(!volumeOpen));
     }
     
     // update clock ever 55 seconds

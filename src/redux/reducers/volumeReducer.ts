@@ -6,7 +6,7 @@ interface actionObj {
 export const volumeReducer = (state: boolean = false, action: actionObj) => {
     switch (action.type){
         case 'VOLUME_CONTROL':
-            return !action.state
+            return action.state
         default:
             return state
     }
