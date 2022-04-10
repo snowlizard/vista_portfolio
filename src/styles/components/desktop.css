@@ -240,3 +240,17 @@
 #wifi_icon{
     right: 115px;
 }
+
+.volume_slider{
+    position: absolute;
+    width: 60px;
+    height: 175px;
+    right: 50px;
+    bottom: 40px;
+    background: rgba(56, 52, 40, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+}
