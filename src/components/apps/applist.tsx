@@ -8,6 +8,7 @@ import { Resume } from "./resume";
 import { FileExplorer } from "./fileExplorer";
 import { Pokedex } from "./pokedex";
 import { Weather } from "./weather";
+import { Quizico } from "./quizico";
 import thispc from '../../assets/ui/icons/shell32.png';
 import bin from '../../assets/ui/icons/recyclebin.png';
 import resume from '../../assets/ui/icons/github.png';
@@ -18,6 +19,7 @@ import notepad from '../../assets/ui/icons/notepad.png';
 import cards from '../../assets/ui/icons/cards.png';
 import pokeball from '../../assets/ui/icons/pokeball.png';
 import sun from '../../assets/ui/icons/sun.png';
+import quizico from '../../assets/ui/icons/quizico.png';
 
 export const Apps = [
     {
@@ -77,10 +79,10 @@ export const Apps = [
         type : 'startmenu'
     },
     {
-        name : 'Cards',
-        app  : <Cards />,
+        name : 'Quizico',
+        app  : <Quizico />,
         open : false,
-        icon : cards,
+        icon : quizico,
         type : 'startmenu'
     },
     {
